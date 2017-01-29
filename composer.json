@@ -1,0 +1,20 @@
+{
+  "name": "john_zuk/testy",
+  "description": "Testy jednostkowe PHP",
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "john_zuk",
+      "email": "john_zuk@wp.pl"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Course\\": "src/"
+    }
+  },
+  "require": {
+    "phpunit/phpunit": "^5.7"
+  }
+}
