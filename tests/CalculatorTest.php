@@ -3,6 +3,9 @@ use Course\Calculator;
 
 class CalculatorTest extends PHPUnit_Framework_TestCase
 {
+    /**
+     * @var Calculator
+     */
     public $calculator;
 
     public function setUp()
