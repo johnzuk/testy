@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  php:
+    build: docker
+    volumes:
+      - .:/usr/src/testy
+    expose:
+      - "9000"
