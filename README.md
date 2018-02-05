@@ -1,2 +1,4 @@
 Repozytorium nauki phpunit
-https://ianchanning.wordpress.com/2014/10/04/windows-netbeans-composer-notes/
+
+docker-compose run --rm -w /usr/src/testy php composer install
+docker-compose run --rm -w /usr/src/testy php ./vendor/bin/phpunit --configuration phpunit.xml tests
