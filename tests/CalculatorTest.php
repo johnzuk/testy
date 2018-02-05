@@ -14,9 +14,15 @@ class CalculatorTest extends TestCase
         $this->calculator = new Calculator();
     }
 
-    public function testAdd()
+    /**
+     * @param $a
+     * @param $b
+     * @param $expected
+     * @dataProvider additionProvider
+     */
+    public function testAdd($a, $b, $expected)
     {
-        $this->assertEquals(3, $this->calculator->add(1, 2));
+        $this->assertEquals($expected, $this->calculator->add($a, $b));
     }
 
     public function testSub()
@@ -34,5 +40,15 @@ class CalculatorTest extends TestCase
     {
         $this->expectException(InvalidArgumentException::class);
         $this->assertEquals(5, $this->calculator->div(10, 0));
+    }
+
+    public function additionProvider()
+    {
+        return [
+            [1, 5, 6],
+            [-1, 1, 0],
+            [1, 0, 1],
+            [0, 0, 0]
+        ];
     }
 }
