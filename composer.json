@@ -5,7 +5,7 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "john_zuk",
+      "name": "Janusz Żukowicz",
       "email": "john_zuk@wp.pl"
     }
   ],
@@ -15,6 +15,6 @@
     }
   },
   "require": {
-    "phpunit/phpunit": "^5.7"
+    "phpunit/phpunit": "^6.5.5"
   }
 }
