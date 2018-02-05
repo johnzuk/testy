@@ -1,7 +1,8 @@
 <?php
+use PHPUnit\Framework\TestCase;
 use Course\Calculator;
 
-class CalculatorTest extends PHPUnit_Framework_TestCase
+class CalculatorTest extends TestCase
 {
     public function testAdd()
     {
