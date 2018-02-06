@@ -35,7 +35,10 @@ class CalculatorTest extends TestCase
         $this->assertEquals(5, $this->calculator->div(10, 2));
         $this->assertEquals(0, $this->calculator->div(0, 2));
         $this->assertEquals(20, $this->calculator->div(10, 0.5));
+        $this->assertEquals(-1, $this->calculator->div(-2, 2));
+        $this->assertEquals(1, $this->calculator->div(-2, -2));
     }
+
     public function testDivWithInvalidArguments()
     {
         $this->expectException(InvalidArgumentException::class);
