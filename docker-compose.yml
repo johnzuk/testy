@@ -7,3 +7,14 @@ services:
       - .:/usr/src/testy
     expose:
       - "9000"
+    links:
+      - mysql
+
+  mysql:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: testy
+    volumes:
+      - "./.data/db:/var/lib/mysql"
+      - .:/usr/src/testy
